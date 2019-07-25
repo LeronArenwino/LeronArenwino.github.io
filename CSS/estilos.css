@@ -1,0 +1,18 @@
+body{
+  background: salmon;
+  font-family: helvetica;
+  color: white;
+
+}
+
+p{
+  font-size: 12px;
+}
+
+#soyunid{
+  color: blue;
+}
+
+.soyunaclase{
+  color: gray;
+}

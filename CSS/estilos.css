@@ -1,26 +1,181 @@
-header{
+/* General*/
 
-  background: slateblue;
-  font-family: helvetica;
-  color: black;
 
+/* Font styles */
+
+
+/* Header */
+
+
+/* Body */
+
+body {
+    background: #393e46;
+    font-family: 'Cabin Condensed';
+    color: #f8f8f8;
+    margin: 0px;
 }
 
-body{
-  background: salmon;
-  font-family: helvetica;
-  color: white;
 
+/* Footer */
+
+.footer {
+    background-color: #222831;
+    color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    margin: 0px;
 }
 
-p{
-  font-size: 12px;
+.footer a {
+    color: #f8f8f8;
 }
 
-#soyunid{
-  color: blue;
+
+/* Pages HTML */
+
+h1 strong {
+    color: #00adb5;
+    font-family: 'Cabin Condensed';
+    font-size: 34px;
+    letter-spacing: -1px;
 }
 
-.soyunaclase{
-  color: gray;
+h2 {
+    font-family: 'Nanum Gothic Coding';
+    font-weight: bold;
+    color: #363636;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Nanum Gothic Coding';
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: -1px;
+    margin: 0px;
+}
+
+p {
+    font-size: 12px;
+}
+
+.header {
+    background-color: #222831;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    height: 60px;
+    margin: 0px 0px;
+}
+
+ol,
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+figure {
+    margin: 0px;
+}
+
+.header a {
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    height: inherit;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.header ol {
+    display: flex;
+}
+
+.hero {
+    height: 300px;
+    background-color: #ffffff;
+    color: #222831;
+    background-image: url('../img/girl.jpg');
+    background-size: 500px 300px;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    margin: 0px 40px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.portfolio {
+    background: #ffffff;
+    margin: 0px 40px;
+    padding: 10px;
+}
+
+.portfolio h2 {
+    padding-left: 10px;
+    color: #222831;
+}
+
+.project {
+    border: 1px solid #363636;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #222831;
+    display: flex;
+    margin: 10px 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-title {
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.project-course {
+    margin: 10px 0px;
+}
+
+.project-details {
+    width: 500px;
+}
+
+.project-imageContainer {
+    width: 200px;
+    height: 200px;
+}
+
+.events {
+    background-color: #ffffff;
+    color: #222831;
+    margin: 0px 40px;
+    padding: 20px;
+}
+
+.contact {
+    background-color: #ffffff;
+    color: #222831;
+    margin: 0px 40px;
+    padding: 20px;
+}
+
+.events a {
+    color: #222831;
 }

@@ -10,10 +10,10 @@
 /* Body */
 
 body {
-    background: #393e46;
+    background: #ffffff;
     font-family: 'Cabin Condensed';
-    color: #f8f8f8;
-    margin: 0px;
+    color: #393e46;
+    margin: 0px auto;
 }
 
 
@@ -44,20 +44,23 @@ h1 strong {
 }
 
 h2 {
-    font-family: 'Nanum Gothic Coding';
+    font-family: 'Cabin Condensed';
     font-weight: bold;
     color: #363636;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 28px;
     margin-bottom: 40px;
+    background-color: #ffffff;
+    padding: 0px 20px;
+    justify-content: left;
 }
 
 h3,
 h4,
 h5,
 h6 {
-    font-family: 'Nanum Gothic Coding';
+    font-family: 'Cabin Condensed';
 }
 
 h1 {
@@ -108,16 +111,15 @@ figure {
 
 .hero {
     height: 300px;
-    background-color: #ffffff;
-    color: #222831;
-    background-image: url('../img/girl.jpg');
-    background-size: 500px 300px;
-    background-repeat: no-repeat;
-    background-position-x: right;
-    margin: 0px 40px;
-    padding: 20px;
+    background-color: #222831;
+    color: #ffffff;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.hero-image{
+    object-fit: cover;
 }
 
 .portfolio {
@@ -144,7 +146,7 @@ figure {
 }
 
 .project-title {
-    font-size: 30px;
+    font-size: 25px;
     margin-top: 0px;
     margin-bottom: 0px;
 }
@@ -158,8 +160,9 @@ figure {
 }
 
 .project-imageContainer {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
 }
 
 .events {
@@ -169,13 +172,121 @@ figure {
     padding: 20px;
 }
 
-.contact {
+.event-list{
+    display: flex;
     background-color: #ffffff;
-    color: #222831;
     margin: 0px 40px;
-    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.events a {
+.event{
+    margin: 10px 20px;
+    width: 400px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #f4fbff;
+}
+
+.event img{
+    width: 480px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.event-detail{
+    margin: 20px 40px;
+    background-color: #ffffff;
+    margin-top: -40px;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+
+.event-description{
+    text-align: left;
+}
+
+.event-url{
+    border: 1px solid;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: #00adb5;
+    border-radius: 5px;
+}
+
+.event-list-title{
+    font-size: 25px;
+    background-color: #ffffff;
     color: #222831;
+    margin: 20px 40px 40px 10px;
+    padding: 0px 20px;
+}
+
+.contact{
+    background-color: #00adb5;
+    color: #ffffff;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.social-link{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0px 10px;
+    background-size: 50px 50px;
+}
+
+.social-link.twitter{
+    background-image: url('../img/twitter.svg');
+}
+
+.social-link.facebook{
+    background-image: url('../img/facebook.svg');
+}
+
+.social-link.github{
+    background-image: url('../img/github.svg');
+}
+
+.social-link.instagram{
+    background-image: url('../img/instagram.svg');
+}
+
+.form-email input{
+    border-color: #222831;
+    border-style: solid;
+    padding: 5px 20px 5px 25px;
+    background-image: url('../img/envelope.svg');
+    background-size: 15px 15px;
+    background-repeat:no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+}
+
+.form-email button{
+    display: block;
+    margin-top: 10px;
+    background: transparent;
+    color: #ffffff;
+    padding: 10px 0px;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.container{    
+    width: 1000px;
+    margin: 0px auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
 }

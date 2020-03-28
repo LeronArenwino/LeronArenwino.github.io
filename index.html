@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="...">
-    <link href="https://fonts.googleapis.com/css?family=Cabin+Condensed|Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Condensed|Sen&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/estilos.css" />
     <title>Francisco Dueñas (Léron)</title>
 </head>
@@ -13,84 +13,141 @@
     <script src="scriptL.js" type="text/javascript">
     </script>
     <header class="header">
-        <figure class="logo">
-            <img width="100px" height="50px" src="img/cat1.jpg" alt="Logo de img/Francisco.jpg">
-        </figure>
-        <nav class="menu">
-            <ol>
-                <li>
-                    <a class="link" href="#portfolio">Portafolio</a>
-                </li>
-                <li>
-                    <a class="link" href="#events">Experiencia</a>
-                </li>
-                <li>
-                    <a class="link" href="#contact">Trabajemos juntos</a>
-                </li>
-            </ol>
-        </nav>
+        <div class="container">
+            <figure class="logo">
+                <img width="100px" height="50px" src="img/girl.jpg" alt="Logo de img/Francisco.jpg">
+            </figure>
+            <nav class="menu">
+                <ol>
+                    <li>
+                        <a class="link" href="#portfolio">Portafolio</a>
+                    </li>
+                    <li>
+                        <a class="link" href="#events">Experiencia</a>
+                    </li>
+                    <li>
+                        <a class="link" href="#contact">Trabajemos juntos</a>
+                    </li>
+                </ol>
+            </nav>
+        </div>
     </header>
     <section class="hero">
-        <h1>
-            ¡Hola! Soy <strong>Francisco Dueñas</strong> <br /> Estudiante de <strong>Ing. de Sistemas</strong> <br /> Apasionado por <strong>aprender</strong>
-        </h1>
-        <!-- <img src="img/cat2.jpg" alt="Imagen principal del sitio web"> -->
+        <div class="container">
+            <h1>
+                ¡Hola! Soy <strong>Francisco Dueñas</strong> <br /> Estudiante de <strong>Ing. de Sistemas</strong>
+                <br />
+                Apasionado por <strong>aprender</strong>
+            </h1>
+            <img class="hero-image" src="img/hero.jpg" alt="Imagen principal del sitio web" width="500" height="300">
+        </div>
     </section>
     <section id="portfolio" class="portfolio">
-        <h2>Portafolio (Proyectos destacados)</h2>
-        <article class="project">
-            <div class="project-details">
-                <h3 class="project-title">Nombre</h3>
-                <h6 class="project-course">Java</h6>
-                <p class="project-date"><small><strong>Fecha:</strong> 12/31/19</small></p>
-                <p class="project-url"><small><strong>Puedes verlo en:</strong> github.</small></p>
-                <p class="project-description">Explicación del proyecto</p>
+        <div class="container">
+            <h2>Portafolio</h2>
+            <article class="project">
+                <div class="project-details">
+                    <h3 class="project-title">Nombre</h3>
+                    <h6 class="project-course">Java</h6>
+                    <p class="project-date"><small><strong>Fecha:</strong> 12/31/19</small></p>
+                    <p class="project-url"><small><strong>Puedes verlo en:</strong> github.</small></p>
+                    <p class="project-description">Explicación del proyecto</p>
 
-            </div>
-            <figure class="project-imageContainer">
-                <img class="project-image" width="200px" height="200px" src="img/cat4.jpg">
-            </figure>
-        </article>
-        <article class="project">
-            <div class="project-details">
-                <h3 class="project-title">Nombre</h3>
-                <h6 class="project-course">Java</h6>
-                <p class="project-date"><small><strong>Fecha:</strong> 12/31/19</small></p>
-                <p class="project-url"><small><strong>Puedes verlo en:</strong> github.</small></p>
-                <p class="project-description">Explicación del proyecto</p>
+                </div>
+                <figure class="project-imageContainer">
+                    <img class="project-image" width="250px" height="250px" src="img/girl.jpg">
+                </figure>
+            </article>
+            <article class="project">
+                <div class="project-details">
+                    <h3 class="project-title">Nombre</h3>
+                    <h6 class="project-course">Java</h6>
+                    <p class="project-date"><small><strong>Fecha:</strong> 12/31/19</small></p>
+                    <p class="project-url"><small><strong>Puedes verlo en:</strong> github.</small></p>
+                    <p class="project-description">Explicación del proyecto</p>
 
-            </div>
-            <figure class="project-imageContainer">
-                <img class="project-image" width="200px" height="200px" src="img/cat4.jpg">
-            </figure>
-        </article>
+                </div>
+                <figure class="project-imageContainer">
+                    <img class="project-image" width="250px" height="250px" src="img/girl.jpg">
+                </figure>
+            </article>
+        </div>
     </section>
-    <section id="events" class="events">
-        <h2>Más sobre mi experiencia</h2>
-        <article class="event">
-            <figure class="event-imageContainer">
-                <!-- <img class="event-image" src="img/cat3.jpg" alt="Imagen experiencia personal"> -->
-            </figure>
-            <h3 class="event-title">Platzi Conf Colombia 2018</h3>
-            <p class="event-description">Evento de la Platzi Conf en Colombia</p>
-            <a class="event-url" href="https://platzi.com/@Leron/" target="-blank">Ver perfil</a>
-        </article>
+    
+    <section id="events" class="event-list">
+        <div class="container">
+            <h2 class="event-list-title">Más sobre mi experiencia</h2>
+        </div>
+        <div class="container">
+            <article class="event">
+                <figure class="event-imageContainer">
+                    <img class="event-image" src="img/project0.JPG" alt="Imagen experiencia personal">
+                </figure>
+                <div class="event-detail">
+                    <h3 class="event-title">Platzi Conf Colombia 2018</h3>
+                    <p class="event-description">PlatziConf 2018, realizada en Colombia en el año 2018, participé de asistente
+                         logrando interactuar con algunos de los profesores de Platzi.
+                    </p>
+                    <a class="event-url" href="https://platzi.com/@Leron/" target="-blank">Ver perfil</a>
+                </div>
+            </article>
+            <article class="event">
+                <figure class="event-imageContainer">
+                    <img class="event-image" src="img/girl.jpg" alt="Imagen experiencia personal">
+                </figure>
+                <div class="event-detail">
+                    <h3 class="event-title">Platzi Conf Colombia 2018</h3>
+                    <p class="event-description">Evento de la Platzi Conf en Colombia</p>
+                    <a class="event-url" href="https://platzi.com/@Leron/" target="-blank">Ver perfil</a>
+                </div>
+            </article>
+            <article class="event">
+                <figure class="event-imageContainer">
+                    <img class="event-image" src="img/girl.jpg" alt="Imagen experiencia personal">
+                </figure>
+                <div class="event-detail">
+                    <h3 class="event-title">Platzi Conf Colombia 2018</h3>
+                    <p class="event-description">Evento de la Platzi Conf en Colombia</p>
+                    <a class="event-url" href="https://platzi.com/@Leron/" target="-blank">Ver perfil</a>
+                </div>
+            </article>
+            <article class="event">
+                <figure class="event-imageContainer">
+                    <img class="event-image" src="img/girl.jpg" alt="Imagen experiencia personal">
+                </figure>
+                <div class="event-detail">
+                    <h3 class="event-title">Platzi Conf Colombia 2018</h3>
+                    <p class="event-description">Evento de la Platzi Conf en Colombia</p>
+                    <a class="event-url" href="https://platzi.com/@Leron/" target="-blank">Ver perfil</a>
+                </div>
+            </article>
+        </div>
     </section>
     <section id="contact" class="contact">
-        <form action="/" class="form-email">
-            <h3>¿Creamos algo juntos?</h3>
-            <input type="text" placeholder="Déjame tu email">
-            <button>Enviar</button>
-        </form>
+        <div class="container">
+            <form action="/" class="form-email">
+                <h3>¿Quieres contactarme?</h3>
+                <input type="text" placeholder="Déjame tu email">
+                <button>Enviar</button>
+            </form>
+            <div class="social">
+                <a href="https://twitter.com/FranciscoDuC" target="_blank" class="social-link twitter"></a>
+                <a href="https://www.facebook.com/FranSeDuCa" target="_blank" class="social-link facebook"></a>
+                <a href="https://github.com/LeronArenwino" target="_blank" class="social-link github"></a>
+                <a href="https://www.instagram.com/leron_arenwino/" target="_blank" class="social-link instagram"></a>
+            </div>
+        </div>
     </section>
     <footer class="footer">
-        <div>
-            <p>Marca personal</p>
-        </div>
-        <div>
-            <p>Agradecimiento a
-                <a href="https://www.platzi.com" target="_blank">Platzi</a>
-            </p>
+        <div class="container">
+            <div>
+                <p>Marca personal</p>
+            </div>
+            <div>
+                <p>Agradecimiento a
+                    <a href="https://www.platzi.com" target="_blank">Platzi</a>
+                </p>
+            </div>
         </div>
     </footer>
 </body>

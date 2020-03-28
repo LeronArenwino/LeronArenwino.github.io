@@ -6,74 +6,6 @@
 
 /* Header */
 
-
-/* Body */
-
-body {
-    background: #ffffff;
-    font-family: 'Cabin Condensed';
-    color: #393e46;
-    margin: 0px auto;
-}
-
-
-/* Footer */
-
-.footer {
-    background-color: #222831;
-    color: #f8f8f8;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px 30px;
-    margin: 0px;
-}
-
-.footer a {
-    color: #f8f8f8;
-}
-
-
-/* Pages HTML */
-
-h1 strong {
-    color: #00adb5;
-    font-family: 'Cabin Condensed';
-    font-size: 34px;
-    letter-spacing: -1px;
-}
-
-h2 {
-    font-family: 'Cabin Condensed';
-    font-weight: bold;
-    color: #363636;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 28px;
-    margin-bottom: 40px;
-    background-color: #ffffff;
-    padding: 0px 20px;
-    justify-content: left;
-}
-
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Cabin Condensed';
-}
-
-h1 {
-    font-size: 36px;
-    line-height: 42px;
-    letter-spacing: -1px;
-    margin: 0px;
-}
-
-p {
-    font-size: 12px;
-}
-
 .header {
     background-color: #222831;
     color: #ffffff;
@@ -83,6 +15,7 @@ p {
     align-items: center;
     height: 60px;
     margin: 0px 0px;
+    flex-wrap: wrap;
 }
 
 ol,
@@ -109,6 +42,68 @@ figure {
     display: flex;
 }
 
+/* Body */
+
+body {
+    background: #ffffff;
+    font-family: 'Cabin Condensed';
+    color: #393e46;
+    margin: 0px auto;
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: #222831;
+    color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    margin: 0px;
+    flex-wrap: wrap;
+}
+
+.footer a {
+    color: #f8f8f8;
+}
+
+
+/* Pages HTML */
+
+h1 strong {
+    color: #00adb5;
+    font-family: 'Cabin Condensed';
+    letter-spacing: -1px;
+}
+
+h2 {
+    font-family: 'Cabin Condensed';
+    font-weight: bold;
+    color: #00adb5;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 40px;
+    background-color: #ffffff;    
+    justify-content: left;
+}
+
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Cabin Condensed';
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: -1px;
+    margin: 0px;
+}
+
 .hero {
     height: 300px;
     background-color: #222831;
@@ -116,6 +111,7 @@ figure {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .hero-image{
@@ -124,13 +120,7 @@ figure {
 
 .portfolio {
     background: #ffffff;
-    margin: 0px 40px;
-    padding: 10px;
-}
-
-.portfolio h2 {
-    padding-left: 10px;
-    color: #222831;
+    padding: 20px;
 }
 
 .project {
@@ -140,15 +130,30 @@ figure {
     background-color: #ffffff;
     color: #222831;
     display: flex;
-    margin: 10px 40px;
+    margin-bottom: 15px;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.project-course,
+.project-date,
+.project-url {
+  margin: 10px 0;
+}
+
+.project-course{
+    font-size: 15px;
+}
+
+.project-description {
+  font-size: 20px;
 }
 
 .project-title {
     font-size: 25px;
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
 }
 
 .project-course {
@@ -156,13 +161,16 @@ figure {
 }
 
 .project-details {
-    width: 500px;
+    width: 50%;
+    overflow: hidden;
+    word-wrap: break-word;
 }
 
 .project-imageContainer {
-    width: 250px;
+    width: 50%;
     height: 250px;
     object-fit: cover;
+    text-align: center;
 }
 
 .events {
@@ -174,15 +182,12 @@ figure {
 
 .event-list{
     display: flex;
-    background-color: #ffffff;
-    margin: 0px 40px;
     flex-wrap: wrap;
-    justify-content: center;
 }
 
 .event{
-    margin: 10px 20px;
-    width: 400px;
+    margin: 1%;
+    width: 48%;
     flex-shrink: 0;
     border-radius: 10px;
     overflow: hidden;
@@ -219,9 +224,8 @@ figure {
 .event-list-title{
     font-size: 25px;
     background-color: #ffffff;
-    color: #222831;
+    color: #00adb5;
     margin: 20px 40px 40px 10px;
-    padding: 0px 20px;
 }
 
 .contact{
@@ -231,7 +235,7 @@ figure {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+    flex-wrap: wrap;
 }
 
 .social-link{
@@ -259,8 +263,10 @@ figure {
 }
 
 .form-email input{
+    width: 100px;
     border-color: #222831;
     border-style: solid;
+    border-radius: 5px;
     padding: 5px 20px 5px 25px;
     background-image: url('../img/envelope.svg');
     background-size: 15px 15px;
@@ -282,11 +288,175 @@ figure {
 }
 
 .container{    
-    width: 1000px;
-    margin: 0px auto;
+    max-width: 1000px;
+    /* width: 100%; */
+    flex: 1;
+    margin: 0 auto;
     display: inherit;
     justify-content: inherit;
     align-items: inherit;
     height: inherit;
     flex-wrap: inherit;
+}
+
+/*desktop first begin with MQ bigger*/
+
+@media screen and (max-width: 1023px){
+
+    .container{
+        padding: 0px .9em;
+    }
+
+    .hero{
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        padding: 2em;
+    }
+
+    .hero-image{
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+    }
+
+    h1{
+        font-size: 2em;
+        z-index: 2;
+    }
+
+}
+
+@media screen and (max-width: 767px){
+
+    .header{
+        display: block;
+        height: auto;
+    }
+
+    .header ol{
+        display: block;
+    }
+
+    .header ol li{
+        height: 50px;
+    }
+
+    .header a{
+        justify-content: center;
+    }
+
+    .header .logo{
+        text-align: center;
+    }
+
+    .project{
+        display: block;
+    }
+
+    .project-imageContainer{
+        width: auto;
+        text-align: center;
+    }
+
+    .project-imageContainer img{
+        max-width: 100%;
+    }
+
+    .project-details{
+        width: auto;
+        font-size: 16px;
+    }
+
+    .project-title{
+        font-size: 1.5em;
+        margin-bottom: .3em;
+    }
+
+    .project-url{
+        font-size: 1.2em;
+    }
+
+    .project-course{
+        font-size: .7em;
+    }
+
+    .project-date{
+        font-size: 1.2em;
+    }
+
+    .project-description{
+        font-size: .8em;
+    }
+
+    .project-course,
+    .project-date,
+    .project-url {
+        margin: .3em 0;
+    }
+
+    .event img{
+        width: 100%;
+        object-position: 70% 35%;
+    }
+
+    .event{
+        width: auto;
+        flex-shrink: initial;
+    }
+
+}
+
+@media screen and (max-width: 479px){
+
+    h1{
+        font-size: 1.4em;
+    }
+
+    .project-details{
+        font-size: 10px;
+    }
+
+    .event-detail{
+        margin: -2em .5em .5em;
+        padding: 1em;
+    }
+
+    .contact{
+        height: auto;
+        padding: 1em 0em;
+        display: block;
+        text-align: center;
+    }
+
+    .form-email button{
+        margin: 1em auto;
+    }
+
+    .form-email h3{
+        margin-top: 0;
+    }
+
+    .footer{
+        display: block;
+        text-align: center;
+        border: 1px solid transparent;
+    }
+
+}
+
+@media screen and (max-width: 319px){
+
+    h1{
+        font-size: 1.2em;
+    }
+
+    .hero{
+        padding: 2em 1em;
+    }
+
 }

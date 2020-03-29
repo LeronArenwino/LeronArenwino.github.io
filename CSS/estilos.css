@@ -409,6 +409,10 @@ h1 {
         flex-shrink: initial;
     }
 
+    .event-list{
+        display: block;
+    }
+
 }
 
 @media screen and (max-width: 479px){

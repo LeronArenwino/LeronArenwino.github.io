@@ -10,14 +10,12 @@
     <!-- <link rel="stylesheet" href="CSS/media.css" media="screen and (max-width:768px)"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-
 <body>
-    <script src="scriptL.js" type="text/javascript">
-    </script>
+    <i class="icon-menu burger-button" id="burger-menu"></i>
     <header class="header">
         <div class="container">
             <figure class="logo">
-                <img width="100px" height="50px" src="img/girl.jpg" alt="Logo de img/Francisco.jpg">
+                <img width="100px" height="50px" src="img/logo.jpg" alt="Logo">
             </figure>
             <nav class="menu">
                 <ol>
@@ -25,7 +23,7 @@
                         <a class="link" href="#portfolio">Portafolio</a>
                     </li>
                     <li>
-                        <a class="link" href="#events">Experiencia</a>
+                        <a class="link" href="#events-list">Experiencia</a>
                     </li>
                     <li>
                         <a class="link" href="#contact">Trabajemos juntos</a>
@@ -34,6 +32,8 @@
             </nav>
         </div>
     </header>
+    <script src="scriptL.js" type="text/javascript">
+    </script>
     <section class="hero">
         <div class="container">
             <h1>
@@ -54,7 +54,6 @@
                     <p class="project-date"><small><strong>Fecha:</strong> 12/31/19</small></p>
                     <p class="project-url"><small><strong>Puedes verlo en:</strong> github.</small></p>
                     <p class="project-description">Explicación del proyecto</p>
-
                 </div>
                 <figure class="project-imageContainer">
                     <img class="project-image" width="250px" height="250px" src="img/girl.jpg">
@@ -67,7 +66,6 @@
                     <p class="project-date"><small><strong>Fecha:</strong> 12/31/19</small></p>
                     <p class="project-url"><small><strong>Puedes verlo en:</strong> github.</small></p>
                     <p class="project-description">Explicación del proyecto</p>
-
                 </div>
                 <figure class="project-imageContainer">
                     <img class="project-image" width="250px" height="250px" src="img/girl.jpg">
@@ -76,7 +74,7 @@
         </div>
     </section>
     <div class="container">
-        <h2 class="event-list-title">Más sobre mi experiencia</h2>
+        <h2 class="event-list-title" id="events-list" >Más sobre mi experiencia</h2>
     </div>
     <section id="events" class="event-list">
         <div class="container">
@@ -151,6 +149,7 @@
             </div>
         </div>
     </footer>
+    
 </body>
 
 </html>

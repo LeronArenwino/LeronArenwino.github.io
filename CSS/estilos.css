@@ -196,6 +196,14 @@ h1 {
     word-wrap: break-word;
 }
 
+.project-details a{
+    width: 50%;
+    overflow: hidden;
+    word-wrap: break-word;
+    color: #363636;
+}
+
+
 .project-imageContainer {
     width: 50%;
     height: 250px;
@@ -373,6 +381,20 @@ h1 {
     h1{
         font-size: 2em;
         z-index: 2;
+    }
+
+    .project{
+        display: block;
+    }
+
+    .project-details{
+        width: auto;
+        font-size: 16px;
+    }
+
+    .project-imageContainer{
+        width: auto;
+        text-align: center;
     }
 
 }

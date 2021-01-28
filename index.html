@@ -1,155 +1,355 @@
 <!DOCTYPE html>
-<html lang="es" dir="ltr">
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
-    <meta charset="UTF-8" />
-    <title>Francisco Dueñas (Léron)</title>
-    <link rel="icon" type="image/png" href="...">
-    <link href="https://fonts.googleapis.com/css?family=Cabin+Condensed|Sen&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/estilos.css" />
-    <!-- <link rel="stylesheet" href="CSS/media.css" media="screen and (max-width:768px)"> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-    <i class="icon-menu burger-button" id="burger-menu"></i>
-    <header class="header">
+    <link rel="shortcut icon" href="img/logo.ico" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Francisco Dueñas (Léron Arenwino)</title>
+  </head>
+
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#navbar"
+    data-bs-offset="55"
+    style="font-family: 'Roboto Condensed', sans-serif"
+  >
+    <div id="app">
+      <!-- header -->
+      <nav
+        id="header"
+        class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark border-bottom"
+      >
         <div class="container">
-            <figure class="logo">
-                <img width="100px" height="50px" src="img/logo.jpg" alt="Logo">
-            </figure>
-            <nav class="menu">
-                <ol>
-                    <li>
-                        <a id="a-portofolio" class="link" href="#portfolio">Portafolio</a>
-                    </li>
-                    <li>
-                        <a id="a-events-list" class="link" href="#events-list">Experiencia</a>
-                    </li>
-                    <li>
-                        <a id="a-contact" class="link" href="#contact">Trabajemos juntos</a>
-                    </li>
-                </ol>
-            </nav>
+          <a class="navbar-brand" href="#">
+            <img width="50" src="img/logo.png" alt="logo-leron" /> Francisco
+            Dueñas
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar"
+            aria-controls="navbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#about-me">About me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#knowledge">Knowledge</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </header>
-    <script src="script.js" type="text/javascript">
-    </script>
-    <section class="hero">
-        <div class="container">
-            <h1>
-                ¡Hola! Soy <strong>Francisco Dueñas</strong> <br /> Estudiante de <strong>Ing. de Sistemas</strong>
-                <br />
-                <strong>¡Siempre apasionado por</strong> Aprender!
-            </h1>
-            <img class="hero-image" src="img/hero.jpg" alt="Imagen principal del sitio web" width="500" height="300">
-        </div>
-    </section>
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <h2>Portafolio</h2>
-            <article class="project">
-                <div class="project-details">
-                    <h3 class="project-title">Aplicación restaurante</h3>
-                    <h6 class="project-course">Java</h6>
-                    <p class="project-date"><small><strong>Fecha:</strong> 06/06/19</small></p>
-                    <p class="project-url"><small><strong>Puedes verlo en:</strong> <a href="https://github.com/LeronArenwino/AplicacionRestaurante" target="_blank">https://github.com/LeronArenwino/AplicacionRestaurante</a></small></p>
-                    <p class="project-description">Esta es un apliación de escritorio desarrollada en Java como proyecto final de la clase de Ingeniería de Software I,
-                        la cual busca ofrecer el servicio de restaurante de un crucero, implementando operaciones CRUD relacionadas con una base de datos en MySQL.
-                    </p>
-                </div>
-                <figure class="project-imageContainer">
-                    <img class="project-image" width="450px" height="250px" src="img/restaurant.png">
-                </figure>
-            </article>
-            <article class="project">
-                <div class="project-details">
-                    <h3 class="project-title">Nombre</h3>
-                    <h6 class="project-course">Java</h6>
-                    <p class="project-date"><small><strong>Fecha:</strong> 12/31/19</small></p>
-                    <p class="project-url"><small><strong>Puedes verlo en:</strong> github.</small></p>
-                    <p class="project-description">Explicación del proyecto</p>
-                </div>
-                <figure class="project-imageContainer">
-                    <img class="project-image" width="250px" height="250px" src="img/girl.jpg">
-                </figure>
-            </article>
-        </div>
-    </section>
-    <div class="container">
-        <h2 class="event-list-title" id="events-list" >Más sobre mi experiencia</h2>
-    </div>
-    <section id="events" class="event-list">
-        <div class="container">
-            <article class="event">
-                <figure class="event-imageContainer">
-                    <img class="event-image" src="img/project0.JPG" alt="Imagen experiencia personal">
-                </figure>
-                <div class="event-detail">
-                    <h3 class="event-title">Platzi Conf Colombia 2018</h3>
-                    <p class="event-description">PlatziConf 2018, realizada en Colombia en el año 2018, participé de asistente
-                         logrando interactuar con algunos de los profesores de Platzi.
-                    </p>
-                    <a class="event-url" href="https://platzi.com/@Leron/" target="-blank">Ver perfil</a>
-                </div>
-            </article>
-            <article class="event">
-                <figure class="event-imageContainer">
-                    <img class="event-image" src="img/girl.jpg" alt="Imagen experiencia personal">
-                </figure>
-                <div class="event-detail">
-                    <h3 class="event-title">Platzi Conf Colombia 2018</h3>
-                    <p class="event-description">Evento de la Platzi Conf en Colombia</p>
-                    <a class="event-url" href="https://platzi.com/@Leron/" target="-blank">Ver perfil</a>
-                </div>
-            </article>
-            <article class="event">
-                <figure class="event-imageContainer">
-                    <img class="event-image" src="img/girl.jpg" alt="Imagen experiencia personal">
-                </figure>
-                <div class="event-detail">
-                    <h3 class="event-title">Platzi Conf Colombia 2018</h3>
-                    <p class="event-description">Evento de la Platzi Conf en Colombia</p>
-                    <a class="event-url" href="https://platzi.com/@Leron/" target="-blank">Ver perfil</a>
-                </div>
-            </article>
-            <article class="event">
-                <figure class="event-imageContainer">
-                    <img class="event-image" src="img/girl.jpg" alt="Imagen experiencia personal">
-                </figure>
-                <div class="event-detail">
-                    <h3 class="event-title">Platzi Conf Colombia 2018</h3>
-                    <p class="event-description">Evento de la Platzi Conf en Colombia</p>
-                    <a class="event-url" href="https://platzi.com/@Leron/" target="-blank">Ver perfil</a>
-                </div>
-            </article>
-        </div>
-    </section>
-    <section id="contact" class="contact">
-        <div class="container">
-            <form action="/" class="form-email">
-                <h3>¿Quieres contactarme?</h3>
-                <input type="text" placeholder="Déjame tu email">
-                <button>Enviar</button>
-            </form>
-            <div class="social">
-                <a href="https://twitter.com/FranciscoDuC" target="_blank" class="social-link twitter"></a>
-                <a href="https://www.facebook.com/FranSeDuCa" target="_blank" class="social-link facebook"></a>
-                <a href="https://github.com/LeronArenwino" target="_blank" class="social-link github"></a>
-                <a href="https://www.instagram.com/leron_arenwino/" target="_blank" class="social-link instagram"></a>
+      </nav>
+      <!-- /header -->
+
+      <!-- main-section -->
+      <main>
+        <article
+          class="container-fluid bg-dark text-light pt-5 pb-5"
+          id="about-me"
+        >
+          <div class="row">
+            <div class="col-12 col-sm-6 offset-sm-3 text-center mt-5">
+              <h2>
+                Hello!, I'm Francisco Dueñas<br />
+                Student of <em style="color: #7fc719">Platzi</em> and<br />
+                <i style="color: #00adb5">Systems Engineer </i>at National
+                University of Colombia<br />
+              </h2>
             </div>
-        </div>
-    </section>
-    <footer class="footer">
-        <div class="container">
-            <div>
-                <p>Marca personal</p>
+
+            <div class="col-12 text-center mt-4 mb-4">
+              <!-- <img src="img/cat.jpg" class="img-fluid" alt="cat-angry"> -->
             </div>
-            <div>
-                <p>Agradecimiento a
-                    <a href="https://www.platzi.com" target="_blank">Platzi</a>
+          </div>
+        </article>
+      </main>
+
+      <!-- /main-section -->
+
+      <!-- portfolio -->
+      <div class="container-fluid bg-light pt-5 pb-5" id="projects">
+        <div class="row">
+          <div class="col-12 text-center text-dark mt-4">
+            <h1>Portfolio</h1>
+            <h5>Projects I have worked on!</h5>
+          </div>
+          <div class="col-12 col-lg-4 text-center px-lg-5 mt-4 mb-4">
+            <div class="card shadow-lg h-100">
+              <div class="card-header">
+                <h5>Restaurant application</h5>
+              </div>
+              <div class="card-body">
+                <h6 class="card-subtitle mb-2 text-muted">
+                  Development in Java and MySQL
+                </h6>
+                <p class="card-text">
+                  This is a desktop application developed as a final project of
+                  Software Engineering I, which seeks to offer the restaurant
+                  service of a cruise ship, implementing CRUD operations with a
+                  MYSQL database.
                 </p>
+                <a
+                  href="https://github.com/LeronArenwino/AplicacionRestaurante"
+                  class="btn btn-dark d-grid"
+                  target="_blank"
+                  >GitHub</a
+                >
+              </div>
+              <div class="card-footer text-muted">2019</div>
             </div>
+          </div>
+          <div class="col-12 col-lg-4 text-center ps-lg-5 pe-lg-5 mt-4 mb-4">
+            <div class="card shadow-lg h-100">
+              <div class="card-header">
+                <h5>Wheels US</h5>
+              </div>
+              <div class="card-body">
+                <h6 class="card-subtitle mb-2 text-muted">
+                  Development in Vue, Bootstrap, HTML, JS, Spring Boot and
+                  Posgrest
+                </h6>
+                <p class="card-text">
+                  This is a web application developed as a final project of
+                  Software Engineering II, which seeks to offer the service of
+                  conect universitary people to travel together to University or
+                  home.
+                </p>
+                <a
+                  href="https://github.com/Ingesoft-II/WheelsUS-Frontend"
+                  class="btn btn-dark d-grid mb-1"
+                  target="_blank"
+                  >GitHub</a
+                >
+                <a
+                  href="http://wheelsus.ue.r.appspot.com/"
+                  class="btn btn-dark d-grid"
+                  target="_blank"
+                  >Website</a
+                >
+              </div>
+              <div class="card-footer text-muted">2020</div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 text-center ps-lg-5 pe-lg-5 mt-4 mb-4">
+            <div class="card shadow-lg h-100">
+              <div class="card-header">
+                <h5>Constructora Gómez S.A. Website</h5>
+              </div>
+              <div class="card-body">
+                <h6 class="card-subtitle mb-2 text-muted">
+                  Development in Bootstrap, HTML, JS and Vue
+                </h6>
+                <p class="card-text">
+                  This is a desktop application developed as a final project of
+                  Software Engineering I, which seeks to offer the restaurant
+                  service of a cruise ship, implementing CRUD operations with a
+                  MYSQL database.
+                </p>
+                <a
+                  href="https://github.com/LeronArenwino/page_cgomez"
+                  class="btn btn-dark d-grid mb-1"
+                  target="_blank"
+                  >GitHub</a
+                >
+                <a
+                  href="https://constructoragomez.co/"
+                  class="btn btn-dark d-grid"
+                  target="_blank"
+                  >Website</a
+                >
+              </div>
+              <div class="card-footer text-muted">2020 - 2021</div>
+            </div>
+          </div>
         </div>
+      </div>
+      <!-- /portfolio -->
+
+      <div class="container-fluid bg-dark pt-5 pb-5" id="knowledge">
+        <div class="row">
+          <div class="col-12 text-center text-light mt-4">
+            <h1>Knowledge</h1>
+            <h5>I know about this:</h5>
+          </div>
+          <div class="col-8 offset-2 text-center text-light mt-4">
+            <div
+              class="accordion accordion-flush bg-light text-dark"
+              id="accordionFlushExample"
+            >
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseOne"
+                  >
+                    Programing languages
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseOne"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingOne"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body"></div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseTwo"
+                  >
+                    Databases
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingTwo"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body"></div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseThree"
+                  >
+                    Design
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingThree"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body"></div>
+                </div>
+              </div>
+            </div>
+            <h1 class="pt-5 pb-5">
+              Always <i style="color: #00adb5">learning</i> something new!
+
+              <br />uwu
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="container-fluid bg-light pt-5 pb-5" id="contact">
+      <div class="row">
+        <div class="col-12 text-center mt-4">
+          <h1>Contact</h1>
+          <h5>Do you want contact with me?</h5>
+        </div>
+        <div class="col-12 text-center mt-4">
+          <h3 class="pt-5 pb-5">
+            You can contact with me in
+            <i style="color: #00adb5">social networks</i>!
+          </h3>
+          <a href="https://github.com/LeronArenwino" target="_blank">
+            <img
+              width="60"
+              src="img/github-dark.svg"
+              class="rounded mx-2"
+              alt="logo-github"
+          /></a>
+          <a href="https://twitter.com/FranciscoDuC" target="_blank"
+            ><img
+              width="60"
+              src="img/twitter-dark.svg"
+              class="rounded mx-2"
+              alt="logo-twitter"
+          /></a>
+          <a href="https://www.instagram.com/leron_arenwino/" target="_blank"
+            ><img
+              width="60"
+              src="img/instagram-dark.svg"
+              class="rounded mx-2"
+              alt="logo-instagram"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/francisco-due%C3%B1as-16b6a61b2/"
+            target="_blank"
+          >
+            <img
+              width="60"
+              src="img/linkedin-dark.svg"
+              class="rounded mx-2"
+              alt="logo-linkedin"
+          /></a>
+        </div>
+        <div class="col-12 text-center pt-5">
+          <h5>I'm a simple person uwu</h5>
+        </div>
+      </div>
     </footer>
-</body>
+    <!-- /footer -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+  </body>
 </html>
